@@ -1,23 +1,14 @@
-import logo from './logo.svg';
+import React from 'react';
+import FileBrowser from './components/FileBrowser';
 import './App.css';
+import 'bootstrap/dist/css/bootstrap.min.css'; // Importing Bootstrap CSS
 
+//Defines the App component which contains a container with a heading and the FileBrowser component.
 function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+    <div className="container mt-5">
+      <h1>Document Management</h1>
+      <FileBrowser />
     </div>
   );
 }
